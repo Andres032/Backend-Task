@@ -4,7 +4,7 @@ const { check } = require('express-validator');
 const { isDate } = require('../helpers/isDate');
 const { validarCampos } = require('../middleware/validar-campos');
 const { validarJWT } = require('../middleware/validar-jwt');
-const { crearTask} = require('../controllers/task');
+const { crearTask, actualizarEstado} = require('../controllers/task');
 const { getTask } = require('../controllers/task');
 
 const router = Router();
@@ -28,6 +28,6 @@ router.post(
     crearTask
 );
 
-
+router.patch('/:id', actualizarEstado );
 
 module.exports = router;

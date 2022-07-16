@@ -8,8 +8,6 @@ const { validarJWT } = require('../middleware/validar-jwt');
 
 const router = Router();
 
-
-
 router.post(
     '/new', 
     [ // middlewares
