@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-import { Etask } from '../enum/status';
-
+const {Etask} = require('../enum/status');
 const TareaSchema = Schema({
 
     title: {
