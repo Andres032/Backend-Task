@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 });
 
 // route middlewares
-pp.use('/api/auth', require('./routes/auth') );
-app.use('/api/task', require('./routes/task') );
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/task', require('./routes/task'));
 
 // Server
 app.listen(process.env.PORT, () => {
