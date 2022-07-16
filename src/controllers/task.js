@@ -3,7 +3,7 @@ const Tarea = require('../models/Tarea');
 
 const getTask = async( req, res = response ) => {
 
-    const tareas= await Monitoria.find()
+    const tareas= await Tareas.find()
                                 .populate('user','name');
 
     res.json({
